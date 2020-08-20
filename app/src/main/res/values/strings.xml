@@ -1,0 +1,61 @@
+<resources>
+    <!-- Name of the application -->
+    <string name="app_name">Report Card</string>
+
+    <!-- Title of the RegistrationActivity -->
+    <string name="reg_title">Hello, Welcome Aboard!</string>
+
+    <!-- Logo image description -->
+    <string name="logo">ReportCard App logo</string>
+
+    <!-- Button of the RegistrationActivity -->
+    <string name="reg_btn">Register</string>
+
+    <!-- Name of the User -->
+    <string name="name">Name</string>
+
+    <!-- Username of the user, which will be provided by the admin to the student and teacher -->
+    <string name="username">User Name</string>
+
+    <!-- Password of the user, which will be provided by the admin to the student and teacher -->
+    <string name="pwd">Password</string>
+
+    <!-- Message of the RegistrationActivity -->
+    <string name="reg_msg">Already a user? SignIn</string>
+
+    <!-- Message for the new user -->
+    <string name="reg_desc">Send your details for verification</string>
+
+    <!-- Email of the user -->
+    <string name="email">Email</string>
+
+    <!-- Title of the LoginActivity -->
+    <string name="login_title">Hello, Welcome Back!</string>
+
+    <!-- Button of the LoginActivity -->
+    <string name="login_btn">Login</string>
+
+    <!-- Message of the LoginActivity -->
+    <string name="login_msg">New here? Register Yourself.</string>
+
+    <!-- Popup close button -->
+    <string name="pop_close">X</string>
+
+    <!-- Popup image description -->
+    <string name="popImg_desc">Admin Avatar</string>
+
+    <!-- Popup image title -->
+    <string name="pop_img">Admin</string>
+
+    <!-- Popup message -->
+    <string name="pop_msg">Make sure your inputs are correct! It will be sent to the IT Admin.
+        Use your first two letters of name and email as your Username to login, once you are verified.</string>
+
+    <!-- Popup button cancel -->
+    <string name="pop_cancel">Cancel</string>
+
+    <!-- Popup button submit -->
+    <string name="pop_submit">Submit</string>
+
+
+</resources>
