@@ -57,5 +57,24 @@
     <!-- Popup button submit -->
     <string name="pop_submit">Submit</string>
 
+    <!-- App intro image description -->
+    <string name="introIcon">App Intro Image</string>
+
+    <!-- Intro slide heading -->
+    <string name="introHeading">Heading</string>
+
+    <!-- Intro slide description -->
+    <string name="introDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed to elusmod tempor incididunt ut et dolore labore etmagna aliqua.  </string>
+
+    <!-- Intro slide back button -->
+    <string name="introBackButton">Back</string>
+
+    <!-- Intro slide next button -->
+    <string name="introNextButton">Next</string>
+
+    <!-- Intro slide finish button -->
+    <string name="introFinishButton">Finish</string>
+
 
 </resources>
