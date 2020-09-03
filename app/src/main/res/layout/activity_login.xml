@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center_vertical"
+    android:orientation="vertical"
     tools:context=".login.LoginActivity">
 
     <ImageView
@@ -55,14 +54,15 @@
         style="@style/MyButton"
         android:layout_gravity="center"
         android:layout_marginTop="18dp"
+        android:onClick="loginBtnClick"
         android:text="@string/login_btn" />
 
     <TextView
         style="@style/MyTextView"
         android:layout_marginTop="12dp"
         android:gravity="center"
-        android:text="@string/login_msg"
         android:onClick="txtSignUpClick"
+        android:text="@string/login_msg"
         android:textAppearance="@android:style/TextAppearance.Medium" />
 
 </LinearLayout>

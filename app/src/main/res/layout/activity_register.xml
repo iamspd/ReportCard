@@ -30,13 +30,23 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/etName"
+        android:id="@+id/etFirstName"
         style="@style/MyEditText"
         android:layout_marginStart="14dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="14dp"
-        android:autofillHints="@string/name"
-        android:hint="@string/name"
+        android:autofillHints="@string/firstName"
+        android:hint="@string/firstName"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        style="@style/MyEditText"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="14dp"
+        android:autofillHints="@string/lastName"
+        android:hint="@string/lastName"
         android:inputType="text" />
 
     <EditText

@@ -11,8 +11,11 @@
     <!-- Button of the RegistrationActivity -->
     <string name="reg_btn">Register</string>
 
-    <!-- Name of the User -->
-    <string name="name">Name</string>
+    <!-- First Name of the User -->
+    <string name="firstName">First Name</string>
+
+    <!-- Last Name of the User -->
+    <string name="lastName">Last Name</string>
 
     <!-- Username of the user, which will be provided by the admin to the student and teacher -->
     <string name="username">User Name</string>
