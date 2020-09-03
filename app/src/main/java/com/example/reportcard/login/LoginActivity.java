@@ -30,6 +30,11 @@ public class LoginActivity extends AppCompatActivity {
     private EditText loginUsername, loginPassword;
 
     // Variables
+    /**
+     * spLogin {@link SharedPreferences} instance of the activity {@link LoginActivity}
+     * realmLogin {@link Realm} instance of the activity {@link LoginActivity}
+     * CLASS_NAME gets the name of the activity {@link LoginActivity}
+     * */
     private SharedPreferences spLogin;
     private Realm realmLogin;
     private static final String CLASS_NAME = LoginActivity.class.getSimpleName();
@@ -39,16 +44,27 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        // Instance of Realm
         realmLogin = Realm.getDefaultInstance();
+
+        // Calls the {@link DefaultSharedPreference} in the activity context
         spLogin = PreferenceManager.getDefaultSharedPreferences(this);
 
+        // Checks whether the SharedPreference is null
         if (spLogin != null) {
+
+            // Moves to the MainActivity class
             startActivity(new Intent(this, MainActivity.class));
             finish();
         }
     }
 
+    /**
+     * Handles the click of the Login {@link android.widget.Button}
+     * */
+
     public void loginBtnClick(View view) {
+
         loginUsername = findViewById(R.id.etLoginUsername);
         String userName = loginUsername.getText().toString();
 

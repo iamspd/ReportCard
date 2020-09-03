@@ -1,15 +1,21 @@
-package com.example.reportcard;
+package com.example.reportcard.intro;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.reportcard.R;
+import com.example.reportcard.login.LoginActivity;
 
 public class IntroActivity extends AppCompatActivity {
 
@@ -21,11 +27,25 @@ public class IntroActivity extends AppCompatActivity {
 
     // Variables
     private int iCurrentPage = 0;
+    private SharedPreferences spIntro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
+
+        int index = spIntro.getInt("Intro", 0);
+
+        if (index > 0){
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+        } else
+        {
+            spIntro = PreferenceManager.getDefaultSharedPreferences(this);
+            SharedPreferences.Editor editor = spIntro.edit();
+            editor.putInt("Intro", 1);
+            editor.apply();
+        }
 
         iSlidePager = findViewById(R.id.vpIntroPager);
         iLinearLayoutDotIndicator = findViewById(R.id.llPageIndicators);
