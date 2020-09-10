@@ -1,4 +1,4 @@
-package com.example.reportcard;
+package com.example.reportcard.database;
 
 import android.app.Application;
 

@@ -79,5 +79,7 @@
     <!-- Intro slide finish button -->
     <string name="introFinishButton">Finish</string>
 
+    <!-- String for Welcome -->
+    <string name="welcome">Welcome, </string>
 
 </resources>

@@ -63,7 +63,7 @@ public class RegisterActivity extends AppCompatActivity {
         regFirstName = findViewById(R.id.etFirstName);
         final String firstName = regFirstName.getText().toString();
 
-        regFirstName = findViewById(R.id.etLastName);
+        regLastName = findViewById(R.id.etLastName);
         final String lastName = regLastName.getText().toString();
 
         regEmail = findViewById(R.id.etEmail);
@@ -145,6 +145,7 @@ public class RegisterActivity extends AppCompatActivity {
                                                                   SharedPreferences.Editor editor = spRegistration.edit();
                                                                   editor.putString("Username", userName);
                                                                   editor.putString("Password", userName);
+                                                                  editor.putString("Name", firstName);
                                                                   editor.apply();
 
                                                                   Intent regEmailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(

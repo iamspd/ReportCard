@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.reportcard.MainActivity;
+import com.example.reportcard.main.MainActivity;
 import com.example.reportcard.R;
 import com.example.reportcard.model.Student;
 
@@ -49,10 +49,10 @@ public class LoginActivity extends AppCompatActivity {
 
         // Calls the {@link DefaultSharedPreference} in the activity context
         spLogin = PreferenceManager.getDefaultSharedPreferences(this);
+        String userStudent = spLogin.getString("Username", "");
 
         // Checks whether the SharedPreference is null
-        if (spLogin != null) {
-
+        if (userStudent != null) {
             // Moves to the MainActivity class
             startActivity(new Intent(this, MainActivity.class));
             finish();
