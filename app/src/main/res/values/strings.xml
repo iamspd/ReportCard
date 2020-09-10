@@ -82,4 +82,16 @@
     <!-- String for Welcome -->
     <string name="welcome">Welcome, </string>
 
+    <!-- MainActivity button MyProfile -->
+    <string name="myself">Myself</string>
+
+    <!-- MainActivity button Grades -->
+    <string name="my_grades">My Grades</string>
+
+    <!-- MainActivity button Assistance -->
+    <string name="assistance">Assistance</string>
+
+    <!-- MainActivity button Logout -->
+    <string name="logout">Logout</string>
+
 </resources>
