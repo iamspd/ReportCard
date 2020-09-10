@@ -94,4 +94,10 @@
     <!-- MainActivity button Logout -->
     <string name="logout">Logout</string>
 
+    <!-- String for phone -->
+    <string name="phone">Phone</string>
+
+    <!-- String for change password -->
+    <string name="change_pwd">Change Password</string>
+
 </resources>
