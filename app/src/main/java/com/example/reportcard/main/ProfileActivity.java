@@ -1,6 +1,4 @@
-package com.example.reportcard;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.reportcard.main;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -8,9 +6,10 @@ import android.preference.PreferenceManager;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.reportcard.model.Student;
+import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.prefs.PreferenceChangeEvent;
+import com.example.reportcard.R;
+import com.example.reportcard.model.Student;
 
 import io.realm.Realm;
 import io.realm.RealmResults;
@@ -56,7 +55,7 @@ public class ProfileActivity extends AppCompatActivity {
                 .findAll();
 
         realmProfile.beginTransaction();
-        while (getData != null){
+        while (getData != null) {
             pFirstName.setText(student.getsFirstName());
             pLastName.setText(student.getsLastName());
             pUsername.setText(student.getsUsername());

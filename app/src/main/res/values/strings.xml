@@ -100,4 +100,10 @@
     <!-- String for change password -->
     <string name="change_pwd">Change Password</string>
 
+    <!-- String for Subject -->
+    <string name="subject">Subject</string>
+
+    <!-- String for Grade - A+ -->
+    <string name="grade">A+</string>
+
 </resources>
